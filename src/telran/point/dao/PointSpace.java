@@ -15,7 +15,6 @@ public class PointSpace {
 		this.points = Arrays.copyOf(points, points.length);
 		comparator = new PointComparator (relPoint); 
 		Arrays.sort(this.points, comparator);
-		// TODO sort this.points by proximity to relPoint
 		
 	}
 	public Point[] getPoints() {

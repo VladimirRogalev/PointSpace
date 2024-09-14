@@ -17,9 +17,9 @@ class PointTest {
 	Point p_2 = new Point(-2, -2);
 	Point[] origin = { p3, p2, p0, p4 };
 	Point[] expected0 = { p0, p2, p3, p4 };
-	Point[] expected4 = { p4, p2, p3, p0 };
-	Point[] expected01 = { p0, p1, p2, p3, p0 };
-	Point[] expected1_2 = { p0, p1, p_2, p2, p3, p0 };
+	Point[] expected4 = { p4, p3, p2, p0 };
+	Point[] expected01 = { p0, p1, p2, p3, p4 };
+	Point[] expected1_2 = { p0, p1, p_2, p2, p3, p4 };
 
 	@Test
 	void testConstructor() {
@@ -35,7 +35,7 @@ class PointTest {
 		ps.addPoint(p1);
 		assertArrayEquals(expected01, ps.getPoints());
 		ps.addPoint(p_2);
-		assertEquals(expected1_2, ps.getPoints());
+		assertArrayEquals(expected1_2, ps.getPoints());
 	}
 
 }

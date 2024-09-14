@@ -37,6 +37,12 @@ public class Point {
 		return Double.doubleToLongBits(x) == Double.doubleToLongBits(other.x)
 				&& Double.doubleToLongBits(y) == Double.doubleToLongBits(other.y);
 	}
+//	@Override
+//	public String toString() {
+//		return "Point [x=" + x + ", y=" + y + "]";
+//	}
+	
+	
 	
 	
 	
